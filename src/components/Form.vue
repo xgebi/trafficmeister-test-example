@@ -105,15 +105,19 @@ export default {
 .layout {
   display: grid;
   grid-template-columns: 1fr 17rem 29rem 1fr;
+  grid-template-rows: 1fr 3rem auto 1fr;
   gap: 1rem;
   align-items: start;
   font-family: sans-serif;
+  height: 100%;
 }
 
 h1 {
   grid-column: 2 / 4;
+  grid-row: 2 / 3;
   text-align: center;
   font-size: 3rem;
+  margin: 0;
 }
 
 .error {
@@ -125,6 +129,7 @@ nav {
   display: flex;
   text-align: left;
   grid-column: 2 / 3;
+  grid-row: 3 / 4;
   flex-flow: column;
   align-items: stretch;
   gap: 1rem;
@@ -146,6 +151,7 @@ nav select {
 
 article {
   grid-column: 3 / 4;
+  grid-row: 3 / 4;
 }
 
 article img {

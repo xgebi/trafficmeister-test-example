@@ -15,6 +15,11 @@ export default {
 
 <style>
 body {
-  background: bisque;
+  background: #fff2e1;
+  padding: 0;
+}
+
+#app {
+  height: 100vh;
 }
 </style>
